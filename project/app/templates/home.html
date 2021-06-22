@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+        <style>
+        *{
+        font-family:calibri;
+        font-size:20px;
+        }
+        h1{
+        font-size:40px;
+        }
+        h2{
+        font-size:30px;
+        }
+    </style>
+</head>
+<body align="center">
+<h2>Context Search Page</h2>
+<form action="result" method="post">
+    {% csrf_token %}
+<input type="text"name="search" placeholder="enter your word here">
+<button type="submit">Search</button>
+    </form>
+</body>
+</html>

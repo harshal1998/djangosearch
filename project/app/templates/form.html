@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+        <style>
+        *{
+        font-family:calibri;
+        font-size:20px;
+        }
+        h1{
+        font-size:40px;
+        }
+        h2{
+        font-size:30px;
+        }
+    </style>
+</head>
+<body align="center">
+<h2>Form</h2>
+<form action="" method="POST">
+    {% csrf_token %}
+
+    {{form.fname}}<br><br>
+    {{form.lname}}<br><br>
+    {{form.city}}<br><br>
+
+        <button type="submit">Submit</button>
+
+</form>
+</body>
+</html>

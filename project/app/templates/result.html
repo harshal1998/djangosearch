@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style>
+        *{
+        font-family:calibri;
+        font-size:20px;
+        }
+        h1{
+        font-size:40px;
+        }
+        h2{
+        font-size:30px;
+        }
+    </style>
+</head>
+<body>
+<h1>Context of {{word}}</h1>
+
+<h2>Meaning: {{ meaning }}.</h2>
+
+Antonyms:{% for i in antonym %}
+{{i}},
+{% endfor %}etc.
+<br>
+<br>
+Synonyms:{% for j in synonym %}
+{{j}},
+{% endfor %}etc.
+<!--<table border="0">-->
+<!--    <tr>-->
+<!--        -->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--        <td colspan="3" style="align:right;text-align:left">{{i}}</td>-->
+<!--    </tr>-->
+
+<!--</table>-->
+<!--<br>-->
+<!--<table>-->
+<!--    <tr>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--        <td colspan="3" style="align:right;text-align:left">{{j}}</td>-->
+<!--    </tr>-->
+
+<!--</table>-->
+
+
+
+
+</body>
+</html>
